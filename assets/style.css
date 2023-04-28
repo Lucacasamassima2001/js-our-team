@@ -46,7 +46,7 @@ h2{
 .name{
     margin-top: 1em;
     font-size: 1.2em;
-    color: grey;
+    color: rgb(80, 79, 79);
     font-weight: bold;
 }
 
@@ -58,5 +58,6 @@ h2{
 }
 
 img{
-    width: 100%;
+    width: 80%;
+    border-radius: 50%;
 }
