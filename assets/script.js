@@ -26,11 +26,13 @@
 const eleImg = document.querySelector(".member-img")
 const eleName = document.querySelector(".name")
 const eleJob = document.querySelector(".job")
-
+const BtnAdd = document.querySelector(".add-card")
+const EleNewname = document.getElementById("name")
+const EleNewjob = document.getElementById("job")
 // CREO ARRAY CON I DATI
 
 
-const members = [
+let members = [
     {
         name: "Wayne Barnett",
         job: "Founder & CEO",
@@ -79,3 +81,25 @@ for(let i = 0; i < members.length; i++){
     <div class="job">${member.job}</div>
     </div>`
 }
+
+
+
+BtnAdd.addEventListener("click", 
+function(){
+    
+    const NewMember = {
+        name: EleNewname.value,
+        job: EleNewjob.value,
+    }
+    members.push(NewMember)
+    console.log(members)
+    eleContainer.innerHTML +=
+    `<div class="card">
+    <img src="assets/imgs/nuovoutente.jpeg">
+    <div class="name">${NewMember.name}</div>
+    <div class="job">${NewMember.job}</div>
+    </div>`
+
+
+
+})
