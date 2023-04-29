@@ -49,6 +49,17 @@ h2{
     margin-bottom: 1em;
     padding: .5em;
     background-color: rgb(234, 204, 111);
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+
+.add-card:hover{
+    cursor: pointer;
+}
+
+.add-card:active{
+    background-color: lightgray; 
 }
 
 
@@ -78,7 +89,17 @@ img{
     border-radius: 50%;
 }
 
+
+label{
+    color: rgb(80, 79, 79);
+}
+
 input{
     margin-bottom: .5em;
     margin-right: 3em;
+    background-color: lightgray;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: .2em;
+    text-align: center;
 }
